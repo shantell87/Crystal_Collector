@@ -6,148 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
+    <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="view" style="background-image: url('./assets/images/gplay.PNG') ; background-repeat: no-repeat; background-size: cover; background-position: center center;"> <!-- body bg image-->
-    <!-- Jumbotron banner -->
-    <div class="container">
+    <div class="view"
+        style="background-image: url('./assets/images/gplay.PNG') ; background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <!-- body bg image-->
+        <!-- Jumbotron banner -->
+        <div class="container">
 
-        <div class="jumbotron" style="color:antiquewhite; background-color: #87CEEB">
-            <h1 class="text-center"><strong>Crytal Collector!</strong></h1>
-        </div>
+            <div class="jumbotron" style="color:antiquewhite; background-color: #87CEEB">
+                <h1 class="text-center"><strong>Crytal Collector!</strong></h1>
+            </div>
 
-        <div class="row">
-            <!--first row, instrutions-->
+            <div class="row">
+                <!--first row, instrutions-->
 
-            <div class="col-lg-12">
-                <!--col 1-->
-                <div class="card">
-                    <div class="h3 text-center" style="background-color:#E6E6FA">
-                        <strong>Instructions</strong>
+                <div class="col-lg-12">
+                    <!--col 1-->
+                    <div class="card">
+                        <div class="h3 text-center" style="background-color:#E6E6FA">
+                            <strong>Instructions</strong>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li>You will be given a random number at the start of the game.</li>
+                                <li>There are four crystals given. By clicking on a crystal you will add a specific
+                                    amount of points to your total score.</li>
+                                <li>You win the game by matching your total score to the random number provided. You
+                                    lose the game if your total score above the random number.</li>
+                                <li>The value of each crystal is hidden until you click on it.</li>
+                                <li>Each time the game restarts the crystals will have new values.</li>
+                            </ul>
+                        </div>
+                        <!--card body end-->
                     </div>
-                    <div class="card-body">
-                        <ul>
-                            <li>You will be given a random number at the start of the game.</li>
-                            <li>There are four crystals given. By clicking on a crystal you will add a specific
-                                amount of points to your total score.</li>
-                            <li>You win the game by matching your total score to the random number provided. You
-                                lose the game if your total score above the random number.</li>
-                            <li>The value of each crystal is hidden until you click on it.</li>
-                            <li>Each time the game restarts the crystals will have new values.</li>
-                        </ul>
-                    </div>
-                    <!--card body end-->
+                    <!--card end-->
                 </div>
-                <!--card end-->
+                <!--col 1 end-->
             </div>
-            <!--col 1 end-->
-        </div>
-        <!--first row ends-->
+            <!--first row ends-->
 
-        <!--Second Row (target score,user score) -->
-        <div class="row">
+            <!--Second Row (target score,user score) -->
+            <div class="row">
 
-            <div class="col-lg-6">
-                <!--col 1-->
-                <div class="card">
-                    <div class="h3 text-center" style="background-color:#E6E6FA">
-                        <strong>Target Score</strong>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="text-center">49</h3>
-                    </div>
-                    <!--card body end-->
-                </div>
-            </div>
-            <!--col 1 end-->
-
-            <div class="col-lg-6">
-                <!--col 2-->
-                <div class="card">
-                    <div class="h3 text-center" style="background-color:#E6E6FA">
-                        <strong>Your Score</strong>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="text-center">22</h3>
-                    </div>
-                    <!--card body end-->
-                </div>
-            </div>
-            <!--col 2 end-->
-
-        </div>
-        <!--Second row end-->
-
-        <div class="row">
-            <!--row 3, crystals-->
-            <div class="col-lg-12">
-                <!--col start-->
-
-            </div>
-            <!--col end-->
-        </div>
-        <!--row 3 end-->
-
-        <div class="card">
-            <div class="h3 text-center" style="background-color:#E6E6FA">
-                <strong>Crytal Selection</strong>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <!--img row-->
-                    <div class="col-sm-3">
-                        <img src="./assets/images/Blue.PNG" alt="" class="img-thumbnail">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="./assets/images/Pink.PNG" alt="" class="img-thumbnail">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="./assets/images/Purple.PNG" alt="" class="img-thumbnail">
-                    </div>
-                    <div class="col-sm-3">
-                        <img src="./assets/images/yellow.PNG" alt="" class="img-thumbnail">
+                <div class="col-lg-6">
+                    <!--col 1-->
+                    <div class="card">
+                        <div class="h3 text-center" style="background-color:#E6E6FA">
+                            <strong>Target Score</strong>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center">49</h3>
+                        </div>
+                        <!--card body end-->
                     </div>
                 </div>
-                <!--img row end-->
-            </div>
-            <!--card body end-->
-        </div>
-        <!--card end-->
+                <!--col 1 end-->
 
-        <div class="row">
-            <!--counter row (wins/losses)-->
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="h3 text-center" style="background-color:#E6E6FA">
-                        <strong>Win Count</strong>
+                <div class="col-lg-6">
+                    <!--col 2-->
+                    <div class="card">
+                        <div class="h3 text-center" style="background-color:#E6E6FA">
+                            <strong>Your Score</strong>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center">22</h3>
+                        </div>
+                        <!--card body end-->
                     </div>
-                    <div class="card-body">
-                        <h3 class="text-center">0</h3>
+                </div>
+                <!--col 2 end-->
+
+            </div>
+            <!--Second row end-->
+
+            <div class="row">
+                <!--row 3, crystals-->
+                <div class="col-lg-12">
+                    <!--col start-->
+
+                </div>
+                <!--col end-->
+            </div>
+            <!--row 3 end-->
+
+            <div class="card">
+                <div class="h3 text-center" style="background-color:#E6E6FA">
+                    <strong>Crytal Selection</strong>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!--img row-->
+                        <div class="col-sm-3">
+                            <img src="./assets/images/Blue.PNG" alt="" class="img-thumbnail" id="blue">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="./assets/images/Pink.PNG" alt="" class="img-thumbnail" id="pink">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="./assets/images/Purple.PNG" alt="" class="img-thumbnail" id="purple">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="./assets/images/yellow.PNG" alt="" class="img-thumbnail" id="yellow">
+                        </div>
+                    </div>
+                    <!--img row end-->
+                </div>
+                <!--card body end-->
+            </div>
+            <!--card end-->
+
+            <div class="row">
+                <!--counter row (wins/losses)-->
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="h3 text-center" style="background-color:#E6E6FA">
+                            <strong>Win Count</strong>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center">0</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="h3 text-center" style="background-color:#E6E6FA">
+                            <strong>Loss Count</strong>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center">0</h3>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!--counter row end-->
 
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="h3 text-center" style="background-color:#E6E6FA">
-                        <strong>Loss Count</strong>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="text-center">0</h3>
-                    </div>
-                </div>
-            </div>
+
+
         </div>
-        <!--counter row end-->
-
-
-
+        <!--main container end-->
     </div>
-    <!--main container end-->
-</div> <!--end of bg img div-->
+    <!--end of bg img div-->
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
 </body>
 
 </html>

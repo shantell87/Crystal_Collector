@@ -62,17 +62,17 @@ var checkWin = function () {
      //If userscore is greater than target score, 
     //then alert, add to wincount, reset game.
     if (currentScore === targetScore) {
-        alert("Yay! You won!");
         winCount++;
         $("winCount").html(winCount);
+        alert("Yay! You won!");
         startGame();
     }
     //If userscore is greater than target score, 
     //then alert, add to losscount, reset game.
     else if (currentScore > targetScore) {
-        alert("You Lost! Game Over");
         lossCount++;
         $("lossCount").html(lossCount);
+        alert("You Lost! Game Over");
         startGame();
     }
 
